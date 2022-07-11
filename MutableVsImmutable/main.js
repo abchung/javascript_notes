@@ -1,3 +1,17 @@
+// Mutable vs Immutable.
+// Immutable:
+//  variable a points to an address in memory call it address_a
+//  variable b is equal to a but the value of a is stored at a different address for b.
+//  that is why when we change the value of b,
+//  value of a does not change.
+//
+// Mutable:
+//  object_a points to an address call it address_a
+//  object_b equals to object_a.
+//  however, object_b is pointing to the same address_a
+//  therefore if we change the value of object_b, 
+//  the value of object_a also changes.
+
 console.log("hello world");
 
 a = 1;
