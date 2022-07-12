@@ -1,7 +1,7 @@
 // Mutable vs Immutable.
 // Immutable:
-//  variable a points to an address in memory call it address_a
-//  variable b is equal to a but the value of a is stored at a different address for b.
+//  variable "a" points to an address in memory call it address_a
+//  variable "b" is equal to "a" but the value of "a" is stored at a different address for "b".
 //  that is why when we change the value of b,
 //  value of a does not change.
 //
@@ -11,22 +11,23 @@
 //  however, object_b is pointing to the same address_a
 //  therefore if we change the value of object_b, 
 //  the value of object_a also changes.
-
-console.log("hello world");
-
-a = 1;
+a = "anthony";
 b = a;
 
-console.log(`typeof a: ${typeof a}`)
-console.log(`typeof b: ${typeof b}`)
-
 console.log(`a: ${a}`)
+console.log(`typeof a: ${typeof a}`)
 console.log(`b: ${b}`)
+console.log(`typeof b: ${typeof b}`)
 console.log('***********************')
 console.log('now make b = 2')
 b = 2;
 console.log(`a: ${a}`)
+console.log(`typeof a: ${typeof a}`)
 console.log(`b: ${b}`)
+console.log(`typeof b: ${typeof b}`)
+console.log('************************')
+
+
 
 // now let's try an array which is mutable
 
@@ -46,13 +47,12 @@ console.log(`array_a[0]: ${array_a[0]}`)
 console.log(`array_b[0]: ${array_b[0]}`)
 
 // now let's try an object.
-
+console.log('******************************')
 class myname{
     constructor(name) {
         this.name = name
     }
 }
-
 
 class_a = new myname('anthony')
 class_b = class_a
