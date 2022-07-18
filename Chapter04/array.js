@@ -65,3 +65,65 @@ console.log('*********** Array.of()**************');
 let bArr = Array.of(10, 20, 30, 'hello');
 
 console.log(bArr);
+
+console.log('****************');
+console.log(`arr: ${arr}`);
+console.log('arr.length:');
+console.log(arr.length);
+
+console.log('**************************');
+
+let obj_o = {};
+obj_o[1] = 'one';
+console.log(obj_o['1']);
+
+console.log('*****************');
+obj_o[-1.35] = 'it is cold';
+
+console.log(obj_o);
+console.log(obj_o[-1.35]);
+
+console.log(`arr: ${arr}`);
+arr.push('hello');
+console.log(`after push: ${arr}`);
+arr.unshift('world');
+console.log(`after unshirt: ${arr}`);
+console.log('******************');
+console.log(arr.length);
+
+console.log(arr);
+
+delete arr[5];
+
+console.log(arr);
+console.log(arr.length);
+
+console.log('****************************');
+arr = [1, 2, 3, 4, 5];
+// console.log(`arr:`);
+// console.log(arr);
+
+// arr.splice(1, 2, 'hello', 'world');
+// console.log(arr);
+arr.splice(2, 0, 'before');
+console.log(arr);
+
+arrDeclare = new Array('4');
+console.log(arrDeclare.length);
+
+console.log('********************');
+
+arr = ['hello', 'world', 'this', 'is', 'men'];
+const arr2 = [];
+const testingFunc = (element, index, myArray) => {
+  arr2.push(index + `. ${element}`);
+};
+
+console.log(arr);
+arr.forEach((element, index, myArray) => testingFunc(element, index, myArray));
+console.log(arr2);
+
+arr = [1, 2, 3];
+console.log(arr);
+arrMap = arr.map((x) => x * x);
+console.log(arrMap);
